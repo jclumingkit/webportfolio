@@ -1,33 +1,19 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Ubuntu&display=swap');
+
 * {
     font-family: 'Ubuntu', sans-serif;
     font-size: 16px;
 }
 
+/* Global Styling */
+
+h3, h4{
+    font-family: 'Bungee Shade' !important;
+}
+
 /* Navbar */
 
-.sidebar {
-    z-index: 1;
-}
-/* Main Content */
-
-.section-container{
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-
-.section-title {
-    z-index: 1;
-    position: sticky;
-    top: 0;
-}
-
-/* Home Section */
-
-
-.profile-photo{
-    width: 200px;
-    height: 200px;
+.nav-link{
+    padding: 0 5px;
 }
