@@ -12,6 +12,15 @@ body {
     background-size: 400% 400%;
     animation: gradient 10s ease infinite;
     color: #a8dadc;
+    overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+
+body::-webkit-scrollbar { 
+    /* WebKit */
+    width: 0;
+    height: 0;
 }
 
 @keyframes gradient {
