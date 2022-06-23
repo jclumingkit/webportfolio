@@ -5,15 +5,96 @@
     font-family: 'Ubuntu', sans-serif;
     font-size: 16px;
 }
+/* animated background */
+
+body {
+    background: linear-gradient(-45deg, #e63946, #457b9d, #457b9d, #1d3557);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+    color: #a8dadc;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
 
 /* Global Styling */
+
+.primary-bg{
+    background-color: #1d3557;
+    color: #a8dadc;
+}
+
+.secondary-bg{
+    background-color: #a8dadc;
+    color: #1d3557;
+}
+
+.border{
+    border: 1px solid #a8dadc !important;
+}
 
 h3, h4{
     font-family: 'Bungee Shade' !important;
 }
 
+.btn-accent{
+    background-color: #e63946;
+    color: #f1faee;
+}
+
+.btn-accent:hover{
+    background-color: #a8dadc;
+    color: #1d3557;
+}
+
+.text-accent{
+    color: #e63946;
+}
+
+.text-primary{
+    color: #1d3557 !important;
+}
+
+.return-home-btn{
+    color: #f1faee !important;
+}
+
 /* Navbar */
+
+.nav {
+    background-color: #a8dadc;
+    border: 1px solid #1d3557;
+}
 
 .nav-link{
     padding: 0 5px;
+    color: #1d3557 !important;
+}
+
+/* Toast */
+.toast-container{
+    min-width: 90vw;
+    z-index: 5;
+    position: fixed;
+    top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+/* Profile Photo */
+
+.profile-photo {
+    width: 300px;
+    max-height: 250px;
 }
